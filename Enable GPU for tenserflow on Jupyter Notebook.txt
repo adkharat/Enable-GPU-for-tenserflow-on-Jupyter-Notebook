@@ -76,45 +76,45 @@ Executing transaction: done
 (ajaygpu) C:\Users\Ajay>pip install ipykernel
 Collecting ipykernel
   Downloading ipykernel-5.2.1-py3-none-any.whl (118 kB)
-     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 118 kB 364 kB/s
+     |Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦| 118 kB 364 kB/s
 Collecting tornado>=4.2
   Downloading tornado-6.0.4-cp37-cp37m-win_amd64.whl (417 kB)
-     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 417 kB 2.2 MB/s
+     |Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦| 417 kB 2.2 MB/s
 Collecting ipython>=5.0.0
   Downloading ipython-7.14.0-py3-none-any.whl (782 kB)
-     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 782 kB 6.4 MB/s
+     |Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦| 782 kB 6.4 MB/s
 Collecting jupyter-client
   Downloading jupyter_client-6.1.3-py3-none-any.whl (106 kB)
-     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 106 kB 6.8 MB/s
+     |Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦| 106 kB 6.8 MB/s
 Collecting traitlets>=4.1.0
   Downloading traitlets-4.3.3-py2.py3-none-any.whl (75 kB)
-     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 75 kB 105 kB/s
+     |Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦| 75 kB 105 kB/s
 Collecting decorator
   Downloading decorator-4.4.2-py2.py3-none-any.whl (9.2 kB)
 Collecting prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0
   Downloading prompt_toolkit-3.0.5-py3-none-any.whl (351 kB)
-     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 351 kB 6.8 MB/s
+     |Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦| 351 kB 6.8 MB/s
 Collecting backcall
   Downloading backcall-0.1.0.tar.gz (9.7 kB)
 Collecting jedi>=0.10
   Downloading jedi-0.17.0-py2.py3-none-any.whl (1.1 MB)
-     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 1.1 MB 3.3 MB/s
+     |Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦| 1.1 MB 3.3 MB/s
 Collecting colorama; sys_platform == "win32"
   Downloading colorama-0.4.3-py2.py3-none-any.whl (15 kB)
 Collecting pygments
   Downloading Pygments-2.6.1-py3-none-any.whl (914 kB)
-     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 914 kB 2.2 MB/s
+     |Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦| 914 kB 2.2 MB/s
 Collecting pickleshare
   Downloading pickleshare-0.7.5-py2.py3-none-any.whl (6.9 kB)
 Requirement already satisfied: setuptools>=18.5 in c:\users\ajay\anaconda3\envs\ajaygpu\lib\site-packages (from ipython>=5.0.0->ipykernel) (46.1.3.post20200330)
 Collecting jupyter-core>=4.6.0
   Downloading jupyter_core-4.6.3-py2.py3-none-any.whl (83 kB)
-     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 83 kB 187 kB/s
+     |Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦| 83 kB 187 kB/s
 Collecting python-dateutil>=2.1
   Using cached python_dateutil-2.8.1-py2.py3-none-any.whl (227 kB)
 Collecting pyzmq>=13
   Downloading pyzmq-19.0.1-cp37-cp37m-win_amd64.whl (1.1 MB)
-     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 1.1 MB 3.2 MB/s
+     |Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦| 1.1 MB 3.2 MB/s
 Collecting six
   Downloading six-1.14.0-py2.py3-none-any.whl (10 kB)
 Collecting ipython-genutils
@@ -123,10 +123,10 @@ Collecting wcwidth
   Downloading wcwidth-0.1.9-py2.py3-none-any.whl (19 kB)
 Collecting parso>=0.7.0
   Downloading parso-0.7.0-py2.py3-none-any.whl (100 kB)
-     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 100 kB 406 kB/s
+     |Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦| 100 kB 406 kB/s
 Collecting pywin32>=1.0; sys_platform == "win32"
   Downloading pywin32-227-cp37-cp37m-win_amd64.whl (9.1 MB)
-     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 9.1 MB 1.1 MB/s
+     |Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦| 9.1 MB 1.1 MB/s
 Building wheels for collected packages: backcall
   Building wheel for backcall (setup.py) ... done
   Created wheel for backcall: filename=backcall-0.1.0-py3-none-any.whl size=10415 sha256=ca7870f4d5e2ca129bee58965674715dab55670177ddf27a3b45b36dd8c7ee3d
@@ -682,11 +682,11 @@ Requirement already satisfied: h5py in c:\users\ajay\appdata\roaming\python\pyth
 Requirement already satisfied: six>=1.9.0 in c:\users\ajay\anaconda3\envs\ajaygpu\lib\site-packages (from keras) (1.14.0)
 Collecting pyyaml
   Downloading PyYAML-5.3.1-cp37-cp37m-win_amd64.whl (216 kB)
-     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 216 kB 386 kB/s
+     |Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦| 216 kB 386 kB/s
 Requirement already satisfied: scipy>=0.14 in c:\users\ajay\appdata\roaming\python\python37\site-packages (from keras) (1.4.1)
 Requirement already satisfied: numpy>=1.9.1 in c:\users\ajay\anaconda3\envs\ajaygpu\lib\site-packages (from keras) (1.18.4)
 Installing collected packages: pyyaml, keras
 Successfully installed keras-2.3.1 pyyaml-5.3.1
 
-(ajaygpu) C:\Users\Ajay>
+(ajaygpu) C:\Users\Ajay>jupyter notebook
 
