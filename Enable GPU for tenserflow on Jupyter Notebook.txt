@@ -1,0 +1,692 @@
+
+(base) C:\Users\Ajay>conda create -n ajaygpu python=3.7
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: C:\Users\Ajay\Anaconda3\envs\ajaygpu
+
+  added / updated specs:
+    - python=3.7
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    ca-certificates-2020.1.1   |                0         125 KB
+    certifi-2020.4.5.1         |           py37_0         156 KB
+    openssl-1.1.1g             |       he774522_0         4.8 MB
+    pip-20.0.2                 |           py37_3         1.7 MB
+    python-3.7.7               |       h81c818b_4        14.3 MB
+    setuptools-46.1.3          |           py37_0         528 KB
+    sqlite-3.31.1              |       h2a8f88b_1         804 KB
+    vs2015_runtime-14.16.27012 |       hf0eaf9b_1         1.1 MB
+    wheel-0.34.2               |           py37_0          66 KB
+    zlib-1.2.11                |       h62dcd97_4         113 KB
+    ------------------------------------------------------------
+                                           Total:        23.7 MB
+
+The following NEW packages will be INSTALLED:
+
+  ca-certificates    pkgs/main/win-64::ca-certificates-2020.1.1-0
+  certifi            pkgs/main/win-64::certifi-2020.4.5.1-py37_0
+  openssl            pkgs/main/win-64::openssl-1.1.1g-he774522_0
+  pip                pkgs/main/win-64::pip-20.0.2-py37_3
+  python             pkgs/main/win-64::python-3.7.7-h81c818b_4
+  setuptools         pkgs/main/win-64::setuptools-46.1.3-py37_0
+  sqlite             pkgs/main/win-64::sqlite-3.31.1-h2a8f88b_1
+  vc                 pkgs/main/win-64::vc-14.1-h0510ff6_4
+  vs2015_runtime     pkgs/main/win-64::vs2015_runtime-14.16.27012-hf0eaf9b_1
+  wheel              pkgs/main/win-64::wheel-0.34.2-py37_0
+  wincertstore       pkgs/main/win-64::wincertstore-0.2-py37_0
+  zlib               pkgs/main/win-64::zlib-1.2.11-h62dcd97_4
+
+
+Proceed ([y]/n)?
+
+
+Downloading and Extracting Packages
+sqlite-3.31.1        | 804 KB    | ############################################################################ | 100%
+vs2015_runtime-14.16 | 1.1 MB    | ############################################################################ | 100%
+pip-20.0.2           | 1.7 MB    | ############################################################################ | 100%
+ca-certificates-2020 | 125 KB    | ############################################################################ | 100%
+openssl-1.1.1g       | 4.8 MB    | ############################################################################ | 100%
+certifi-2020.4.5.1   | 156 KB    | ############################################################################ | 100%
+setuptools-46.1.3    | 528 KB    | ############################################################################ | 100%
+zlib-1.2.11          | 113 KB    | ############################################################################ | 100%
+wheel-0.34.2         | 66 KB     | ############################################################################ | 100%
+python-3.7.7         | 14.3 MB   | ############################################################################ | 100%
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate ajaygpu
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+
+(base) C:\Users\Ajay>conda activate ajaygpu
+
+(ajaygpu) C:\Users\Ajay>pip install ipykernel
+Collecting ipykernel
+  Downloading ipykernel-5.2.1-py3-none-any.whl (118 kB)
+     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 118 kB 364 kB/s
+Collecting tornado>=4.2
+  Downloading tornado-6.0.4-cp37-cp37m-win_amd64.whl (417 kB)
+     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 417 kB 2.2 MB/s
+Collecting ipython>=5.0.0
+  Downloading ipython-7.14.0-py3-none-any.whl (782 kB)
+     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 782 kB 6.4 MB/s
+Collecting jupyter-client
+  Downloading jupyter_client-6.1.3-py3-none-any.whl (106 kB)
+     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 106 kB 6.8 MB/s
+Collecting traitlets>=4.1.0
+  Downloading traitlets-4.3.3-py2.py3-none-any.whl (75 kB)
+     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 75 kB 105 kB/s
+Collecting decorator
+  Downloading decorator-4.4.2-py2.py3-none-any.whl (9.2 kB)
+Collecting prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0
+  Downloading prompt_toolkit-3.0.5-py3-none-any.whl (351 kB)
+     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 351 kB 6.8 MB/s
+Collecting backcall
+  Downloading backcall-0.1.0.tar.gz (9.7 kB)
+Collecting jedi>=0.10
+  Downloading jedi-0.17.0-py2.py3-none-any.whl (1.1 MB)
+     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 1.1 MB 3.3 MB/s
+Collecting colorama; sys_platform == "win32"
+  Downloading colorama-0.4.3-py2.py3-none-any.whl (15 kB)
+Collecting pygments
+  Downloading Pygments-2.6.1-py3-none-any.whl (914 kB)
+     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 914 kB 2.2 MB/s
+Collecting pickleshare
+  Downloading pickleshare-0.7.5-py2.py3-none-any.whl (6.9 kB)
+Requirement already satisfied: setuptools>=18.5 in c:\users\ajay\anaconda3\envs\ajaygpu\lib\site-packages (from ipython>=5.0.0->ipykernel) (46.1.3.post20200330)
+Collecting jupyter-core>=4.6.0
+  Downloading jupyter_core-4.6.3-py2.py3-none-any.whl (83 kB)
+     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 83 kB 187 kB/s
+Collecting python-dateutil>=2.1
+  Using cached python_dateutil-2.8.1-py2.py3-none-any.whl (227 kB)
+Collecting pyzmq>=13
+  Downloading pyzmq-19.0.1-cp37-cp37m-win_amd64.whl (1.1 MB)
+     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 1.1 MB 3.2 MB/s
+Collecting six
+  Downloading six-1.14.0-py2.py3-none-any.whl (10 kB)
+Collecting ipython-genutils
+  Downloading ipython_genutils-0.2.0-py2.py3-none-any.whl (26 kB)
+Collecting wcwidth
+  Downloading wcwidth-0.1.9-py2.py3-none-any.whl (19 kB)
+Collecting parso>=0.7.0
+  Downloading parso-0.7.0-py2.py3-none-any.whl (100 kB)
+     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 100 kB 406 kB/s
+Collecting pywin32>=1.0; sys_platform == "win32"
+  Downloading pywin32-227-cp37-cp37m-win_amd64.whl (9.1 MB)
+     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 9.1 MB 1.1 MB/s
+Building wheels for collected packages: backcall
+  Building wheel for backcall (setup.py) ... done
+  Created wheel for backcall: filename=backcall-0.1.0-py3-none-any.whl size=10415 sha256=ca7870f4d5e2ca129bee58965674715dab55670177ddf27a3b45b36dd8c7ee3d
+  Stored in directory: c:\users\ajay\appdata\local\pip\cache\wheels\9e\56\4f\da13e448a8a5b8671b2954600d5355cf36e557c7aa5020139b
+Successfully built backcall
+ERROR: tensorflow 2.2.0 requires astunparse==1.6.3, which is not installed.
+ERROR: tensorflow 2.2.0 requires keras-preprocessing>=1.1.0, which is not installed.
+ERROR: tensorflow 2.2.0 requires numpy<2.0,>=1.16.0, which is not installed.
+ERROR: tensorflow 2.2.0 requires wrapt>=1.11.1, which is not installed.
+ERROR: tensorboard 2.2.1 requires numpy>=1.12.0, which is not installed.
+ERROR: tensorboard 2.2.1 requires requests<3,>=2.21.0, which is not installed.
+ERROR: tensorboard 2.2.1 requires werkzeug>=0.11.15, which is not installed.
+ERROR: h5py 2.10.0 requires numpy>=1.7, which is not installed.
+Installing collected packages: tornado, decorator, wcwidth, prompt-toolkit, backcall, six, ipython-genutils, traitlets, parso, jedi, colorama, pygments, pickleshare, ipython, pywin32, jupyter-core, python-dateutil, pyzmq, jupyter-client, ipykernel
+Successfully installed backcall-0.1.0 colorama-0.4.3 decorator-4.4.2 ipykernel-5.2.1 ipython-7.14.0 ipython-genutils-0.2.0 jedi-0.17.0 jupyter-client-6.1.3 jupyter-core-4.6.3 parso-0.7.0 pickleshare-0.7.5 prompt-toolkit-3.0.5 pygments-2.6.1 python-dateutil-2.8.1 pywin32-227 pyzmq-19.0.1 six-1.14.0 tornado-6.0.4 traitlets-4.3.3 wcwidth-0.1.9
+
+(ajaygpu) C:\Users\Ajay>
+(ajaygpu) C:\Users\Ajay>
+(ajaygpu) C:\Users\Ajay>
+(ajaygpu) C:\Users\Ajay>python -m ipykernel install --user --name ajaygpu --display-name "ajaygpu"
+Installed kernelspec ajaygpu in C:\Users\Ajay\AppData\Roaming\jupyter\kernels\ajaygpu
+
+(ajaygpu) C:\Users\Ajay>conda install tenserflow-gpu
+Collecting package metadata (current_repodata.json): done
+Solving environment: failed with initial frozen solve. Retrying with flexible solve.
+Collecting package metadata (repodata.json): done
+Solving environment: failed with initial frozen solve. Retrying with flexible solve.
+
+PackagesNotFoundError: The following packages are not available from current channels:
+
+  - tenserflow-gpu
+
+Current channels:
+
+  - https://repo.anaconda.com/pkgs/main/win-64
+  - https://repo.anaconda.com/pkgs/main/noarch
+  - https://repo.anaconda.com/pkgs/r/win-64
+  - https://repo.anaconda.com/pkgs/r/noarch
+  - https://repo.anaconda.com/pkgs/msys2/win-64
+  - https://repo.anaconda.com/pkgs/msys2/noarch
+
+To search for alternate channels that may provide the conda package you're
+looking for, navigate to
+
+    https://anaconda.org
+
+and use the search bar at the top of the page.
+
+
+
+(ajaygpu) C:\Users\Ajay>conda config --append channels conda-forge
+
+(ajaygpu) C:\Users\Ajay>conda install tenserflow-gpu
+Collecting package metadata (current_repodata.json): done
+Solving environment: failed with initial frozen solve. Retrying with flexible solve.
+Collecting package metadata (repodata.json): done
+Solving environment: failed with initial frozen solve. Retrying with flexible solve.
+
+PackagesNotFoundError: The following packages are not available from current channels:
+
+  - tenserflow-gpu
+
+Current channels:
+
+  - https://repo.anaconda.com/pkgs/main/win-64
+  - https://repo.anaconda.com/pkgs/main/noarch
+  - https://repo.anaconda.com/pkgs/r/win-64
+  - https://repo.anaconda.com/pkgs/r/noarch
+  - https://repo.anaconda.com/pkgs/msys2/win-64
+  - https://repo.anaconda.com/pkgs/msys2/noarch
+  - https://conda.anaconda.org/conda-forge/win-64
+  - https://conda.anaconda.org/conda-forge/noarch
+
+To search for alternate channels that may provide the conda package you're
+looking for, navigate to
+
+    https://anaconda.org
+
+and use the search bar at the top of the page.
+
+
+
+(ajaygpu) C:\Users\Ajay>pip install tenserflow-gpu
+ERROR: Could not find a version that satisfies the requirement tenserflow-gpu (from versions: none)
+ERROR: No matching distribution found for tenserflow-gpu
+
+(ajaygpu) C:\Users\Ajay>conda search tensorflow-gpu -c conda-forge
+Loading channels: done
+# Name                       Version           Build  Channel
+tensorflow-gpu                 1.8.0      h21ff451_0  pkgs/main
+tensorflow-gpu                 1.9.0      hf154084_0  pkgs/main
+tensorflow-gpu                1.10.0      hf154084_0  pkgs/main
+tensorflow-gpu                1.11.0      h0d30ee6_0  pkgs/main
+tensorflow-gpu                1.12.0      h0d30ee6_0  pkgs/main
+tensorflow-gpu                1.13.1      h0d30ee6_0  pkgs/main
+tensorflow-gpu                1.14.0      h0d30ee6_0  pkgs/main
+tensorflow-gpu                1.15.0      h0d30ee6_0  pkgs/main
+tensorflow-gpu                 2.0.0      h0d30ee6_0  pkgs/main
+tensorflow-gpu                 2.1.0      h0d30ee6_0  pkgs/main
+
+(ajaygpu) C:\Users\Ajay>
+(ajaygpu) C:\Users\Ajay>pip install tenserflow-gpu==2.1.0
+ERROR: Could not find a version that satisfies the requirement tenserflow-gpu==2.1.0 (from versions: none)
+ERROR: No matching distribution found for tenserflow-gpu==2.1.0
+
+(ajaygpu) C:\Users\Ajay>pip install ipykernel tenserflow-gpu=2.1.0
+ERROR: Invalid requirement: 'tenserflow-gpu=2.1.0'
+Hint: = is not a valid operator. Did you mean == ?
+
+(ajaygpu) C:\Users\Ajay>pip install ipykernel tenserflow-gpu==2.1.0
+Requirement already satisfied: ipykernel in c:\users\ajay\anaconda3\envs\ajaygpu\lib\site-packages (5.2.1)
+ERROR: Could not find a version that satisfies the requirement tenserflow-gpu==2.1.0 (from versions: none)
+ERROR: No matching distribution found for tenserflow-gpu==2.1.0
+
+(ajaygpu) C:\Users\Ajay>pip install ipykernel tenserflow-gpu==2.0.0
+Requirement already satisfied: ipykernel in c:\users\ajay\anaconda3\envs\ajaygpu\lib\site-packages (5.2.1)
+ERROR: Could not find a version that satisfies the requirement tenserflow-gpu==2.0.0 (from versions: none)
+ERROR: No matching distribution found for tenserflow-gpu==2.0.0
+
+(ajaygpu) C:\Users\Ajay>conda create -n ajaygpu python=1.15.0
+WARNING: A conda environment already exists at 'C:\Users\Ajay\Anaconda3\envs\ajaygpu'
+Remove existing environment (y/[n])?
+
+CondaSystemExit: Exiting.
+
+^CTerminate batch job (Y/N)?
+^C
+(ajaygpu) C:\Users\Ajay>conda install tensorflow-gpu=2.1 -c conda-forge
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: C:\Users\Ajay\Anaconda3\envs\ajaygpu
+
+  added / updated specs:
+    - tensorflow-gpu=2.1
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    _tflow_select-2.1.0        |              gpu           3 KB
+    absl-py-0.9.0              |   py37hc8dfbb8_1         162 KB  conda-forge
+    astor-0.7.1                |             py_0          22 KB  conda-forge
+    blinker-1.4                |             py_1          13 KB  conda-forge
+    brotlipy-0.7.0             |py37h4ab8f01_1000         367 KB  conda-forge
+    ca-certificates-2020.4.5.1 |       hecc5488_0         184 KB  conda-forge
+    cachetools-3.1.1           |             py_0          11 KB  conda-forge
+    certifi-2020.4.5.1         |   py37hc8dfbb8_0         150 KB  conda-forge
+    cffi-1.14.0                |   py37ha419a9e_0         222 KB  conda-forge
+    chardet-3.0.4              |py37hc8dfbb8_1006         189 KB  conda-forge
+    click-7.1.2                |     pyh9f0ad1d_0          64 KB  conda-forge
+    cryptography-2.9.2         |   py37h26f1ce3_0         578 KB  conda-forge
+    cudatoolkit-10.1.243       |       h74a9793_0       300.3 MB
+    cudnn-7.6.5                |       cuda10.1_0       179.1 MB
+    gast-0.2.2                 |             py_0          10 KB  conda-forge
+    google-auth-1.14.2         |     pyh9f0ad1d_0          54 KB  conda-forge
+    google-auth-oauthlib-0.4.1 |             py_2          18 KB  conda-forge
+    google-pasta-0.2.0         |     pyh8c360ce_0          42 KB  conda-forge
+    grpcio-1.27.2              |   py37h351948d_0         1.2 MB
+    h5py-2.10.0                |nompi_py37h422b98e_102         950 KB  conda-forge
+    hdf5-1.10.5                |nompi_ha405e13_1104        35.1 MB  conda-forge
+    idna-2.9                   |             py_1          52 KB  conda-forge
+    intel-openmp-2020.0        |              166         1.5 MB
+    keras-applications-1.0.8   |             py_1          30 KB  conda-forge
+    keras-preprocessing-1.1.0  |             py_0          33 KB  conda-forge
+    libblas-3.8.0              |           15_mkl         3.5 MB  conda-forge
+    libcblas-3.8.0             |           15_mkl         3.5 MB  conda-forge
+    liblapack-3.8.0            |           15_mkl         3.5 MB  conda-forge
+    libprotobuf-3.11.4         |       h1a1b453_0         2.2 MB  conda-forge
+    markdown-3.2.1             |             py_0          61 KB  conda-forge
+    mkl-2020.0                 |              166        98.9 MB
+    numpy-1.18.4               |   py37hae9e721_0         4.8 MB  conda-forge
+    oauthlib-3.0.1             |             py_0          82 KB  conda-forge
+    openssl-1.1.1g             |       he774522_0         5.7 MB  conda-forge
+    opt_einsum-3.2.1           |             py_0          49 KB  conda-forge
+    protobuf-3.11.4            |   py37h5fe3f0a_1         583 KB  conda-forge
+    pyasn1-0.4.8               |             py_0          53 KB  conda-forge
+    pyasn1-modules-0.2.7       |             py_0          60 KB  conda-forge
+    pycparser-2.20             |             py_0          89 KB  conda-forge
+    pyjwt-1.7.1                |             py_0          17 KB  conda-forge
+    pyopenssl-19.1.0           |             py_1          47 KB  conda-forge
+    pyreadline-2.1             |        py37_1001         141 KB  conda-forge
+    pysocks-1.7.1              |   py37hc8dfbb8_1          27 KB  conda-forge
+    requests-2.23.0            |     pyh8c360ce_2          47 KB  conda-forge
+    requests-oauthlib-1.2.0    |             py_0          19 KB  conda-forge
+    rsa-4.0                    |             py_0          27 KB  conda-forge
+    scipy-1.4.1                |   py37h9439919_0        11.9 MB
+    six-1.14.0                 |             py_1          13 KB  conda-forge
+    tensorboard-2.1.1          |             py_1         3.4 MB  conda-forge
+    tensorflow-2.1.0           |gpu_py37h7db9008_0           4 KB
+    tensorflow-base-2.1.0      |gpu_py37h55f5790_0       105.3 MB
+    tensorflow-estimator-2.1.0 |     pyhd54b08b_0         251 KB
+    tensorflow-gpu-2.1.0       |       h0d30ee6_0           3 KB
+    termcolor-1.1.0            |             py_2           6 KB  conda-forge
+    urllib3-1.25.9             |             py_0          92 KB  conda-forge
+    werkzeug-0.16.1            |             py_0         255 KB  conda-forge
+    win_inet_pton-1.1.0        |           py37_0           7 KB  conda-forge
+    wrapt-1.12.1               |   py37h8055547_1          45 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:       765.2 MB
+
+The following NEW packages will be INSTALLED:
+
+  _tflow_select      pkgs/main/win-64::_tflow_select-2.1.0-gpu
+  absl-py            conda-forge/win-64::absl-py-0.9.0-py37hc8dfbb8_1
+  astor              conda-forge/noarch::astor-0.7.1-py_0
+  blas               pkgs/main/win-64::blas-1.0-mkl
+  blinker            conda-forge/noarch::blinker-1.4-py_1
+  brotlipy           conda-forge/win-64::brotlipy-0.7.0-py37h4ab8f01_1000
+  cachetools         conda-forge/noarch::cachetools-3.1.1-py_0
+  cffi               conda-forge/win-64::cffi-1.14.0-py37ha419a9e_0
+  chardet            conda-forge/win-64::chardet-3.0.4-py37hc8dfbb8_1006
+  click              conda-forge/noarch::click-7.1.2-pyh9f0ad1d_0
+  cryptography       conda-forge/win-64::cryptography-2.9.2-py37h26f1ce3_0
+  cudatoolkit        pkgs/main/win-64::cudatoolkit-10.1.243-h74a9793_0
+  cudnn              pkgs/main/win-64::cudnn-7.6.5-cuda10.1_0
+  gast               conda-forge/noarch::gast-0.2.2-py_0
+  google-auth        conda-forge/noarch::google-auth-1.14.2-pyh9f0ad1d_0
+  google-auth-oauth~ conda-forge/noarch::google-auth-oauthlib-0.4.1-py_2
+  google-pasta       conda-forge/noarch::google-pasta-0.2.0-pyh8c360ce_0
+  grpcio             pkgs/main/win-64::grpcio-1.27.2-py37h351948d_0
+  h5py               conda-forge/win-64::h5py-2.10.0-nompi_py37h422b98e_102
+  hdf5               conda-forge/win-64::hdf5-1.10.5-nompi_ha405e13_1104
+  icc_rt             pkgs/main/win-64::icc_rt-2019.0.0-h0cc432a_1
+  idna               conda-forge/noarch::idna-2.9-py_1
+  intel-openmp       pkgs/main/win-64::intel-openmp-2020.0-166
+  keras-applications conda-forge/noarch::keras-applications-1.0.8-py_1
+  keras-preprocessi~ conda-forge/noarch::keras-preprocessing-1.1.0-py_0
+  libblas            conda-forge/win-64::libblas-3.8.0-15_mkl
+  libcblas           conda-forge/win-64::libcblas-3.8.0-15_mkl
+  liblapack          conda-forge/win-64::liblapack-3.8.0-15_mkl
+  libprotobuf        conda-forge/win-64::libprotobuf-3.11.4-h1a1b453_0
+  markdown           conda-forge/noarch::markdown-3.2.1-py_0
+  mkl                pkgs/main/win-64::mkl-2020.0-166
+  mkl-service        pkgs/main/win-64::mkl-service-2.3.0-py37hb782905_0
+  numpy              conda-forge/win-64::numpy-1.18.4-py37hae9e721_0
+  oauthlib           conda-forge/noarch::oauthlib-3.0.1-py_0
+  opt_einsum         conda-forge/noarch::opt_einsum-3.2.1-py_0
+  protobuf           conda-forge/win-64::protobuf-3.11.4-py37h5fe3f0a_1
+  pyasn1             conda-forge/noarch::pyasn1-0.4.8-py_0
+  pyasn1-modules     conda-forge/noarch::pyasn1-modules-0.2.7-py_0
+  pycparser          conda-forge/noarch::pycparser-2.20-py_0
+  pyjwt              conda-forge/noarch::pyjwt-1.7.1-py_0
+  pyopenssl          conda-forge/noarch::pyopenssl-19.1.0-py_1
+  pyreadline         conda-forge/win-64::pyreadline-2.1-py37_1001
+  pysocks            conda-forge/win-64::pysocks-1.7.1-py37hc8dfbb8_1
+  python_abi         conda-forge/win-64::python_abi-3.7-1_cp37m
+  requests           conda-forge/noarch::requests-2.23.0-pyh8c360ce_2
+  requests-oauthlib  conda-forge/noarch::requests-oauthlib-1.2.0-py_0
+  rsa                conda-forge/noarch::rsa-4.0-py_0
+  scipy              pkgs/main/win-64::scipy-1.4.1-py37h9439919_0
+  six                conda-forge/noarch::six-1.14.0-py_1
+  tensorboard        conda-forge/noarch::tensorboard-2.1.1-py_1
+  tensorflow         pkgs/main/win-64::tensorflow-2.1.0-gpu_py37h7db9008_0
+  tensorflow-base    pkgs/main/win-64::tensorflow-base-2.1.0-gpu_py37h55f5790_0
+  tensorflow-estima~ pkgs/main/noarch::tensorflow-estimator-2.1.0-pyhd54b08b_0
+  tensorflow-gpu     pkgs/main/win-64::tensorflow-gpu-2.1.0-h0d30ee6_0
+  termcolor          conda-forge/noarch::termcolor-1.1.0-py_2
+  urllib3            conda-forge/noarch::urllib3-1.25.9-py_0
+  werkzeug           conda-forge/noarch::werkzeug-0.16.1-py_0
+  win_inet_pton      conda-forge/win-64::win_inet_pton-1.1.0-py37_0
+  wrapt              conda-forge/win-64::wrapt-1.12.1-py37h8055547_1
+
+The following packages will be UPDATED:
+
+  ca-certificates     pkgs/main::ca-certificates-2020.1.1-0 --> conda-forge::ca-certificates-2020.4.5.1-hecc5488_0
+
+The following packages will be SUPERSEDED by a higher-priority channel:
+
+  certifi              pkgs/main::certifi-2020.4.5.1-py37_0 --> conda-forge::certifi-2020.4.5.1-py37hc8dfbb8_0
+  openssl                                         pkgs/main --> conda-forge
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+blinker-1.4          | 13 KB     | ############################################################################ | 100%
+wrapt-1.12.1         | 45 KB     | ############################################################################ | 100%
+pysocks-1.7.1        | 27 KB     | ############################################################################ | 100%
+pyjwt-1.7.1          | 17 KB     | ############################################################################ | 100%
+cryptography-2.9.2   | 578 KB    | ############################################################################ | 100%
+keras-preprocessing- | 33 KB     | ############################################################################ | 100%
+termcolor-1.1.0      | 6 KB      | ############################################################################ | 100%
+hdf5-1.10.5          | 35.1 MB   | ############################################################################ | 100%
+win_inet_pton-1.1.0  | 7 KB      | ############################################################################ | 100%
+keras-applications-1 | 30 KB     | ############################################################################ | 100%
+tensorflow-base-2.1. | 105.3 MB  | ############################################################################ | 100%
+liblapack-3.8.0      | 3.5 MB    | ############################################################################ | 100%
+cffi-1.14.0          | 222 KB    | ############################################################################ | 100%
+libcblas-3.8.0       | 3.5 MB    | ############################################################################ | 100%
+oauthlib-3.0.1       | 82 KB     | ############################################################################ | 100%
+google-auth-oauthlib | 18 KB     | ############################################################################ | 100%
+ca-certificates-2020 | 184 KB    | ############################################################################ | 100%
+tensorflow-gpu-2.1.0 | 3 KB      | ############################################################################ | 100%
+mkl-2020.0           | 98.9 MB   | ############################################################################ | 100%
+h5py-2.10.0          | 950 KB    | ############################################################################ | 100%
+certifi-2020.4.5.1   | 150 KB    | ############################################################################ | 100%
+urllib3-1.25.9       | 92 KB     | ############################################################################ | 100%
+openssl-1.1.1g       | 5.7 MB    | ############################################################################ | 100%
+google-pasta-0.2.0   | 42 KB     | ############################################################################ | 100%
+pycparser-2.20       | 89 KB     | ############################################################################ | 100%
+chardet-3.0.4        | 189 KB    | ############################################################################ | 100%
+tensorboard-2.1.1    | 3.4 MB    | ############################################################################ | 100%
+google-auth-1.14.2   | 54 KB     | ############################################################################ | 100%
+cachetools-3.1.1     | 11 KB     | ############################################################################ | 100%
+libprotobuf-3.11.4   | 2.2 MB    | ############################################################################ | 100%
+astor-0.7.1          | 22 KB     | ############################################################################ | 100%
+pyopenssl-19.1.0     | 47 KB     | ############################################################################ | 100%
+requests-oauthlib-1. | 19 KB     | ############################################################################ | 100%
+gast-0.2.2           | 10 KB     | ############################################################################ | 100%
+scipy-1.4.1          | 11.9 MB   | ############################################################################ | 100%
+click-7.1.2          | 64 KB     | ############################################################################ | 100%
+six-1.14.0           | 13 KB     | ############################################################################ | 100%
+pyasn1-modules-0.2.7 | 60 KB     | ############################################################################ | 100%
+protobuf-3.11.4      | 583 KB    | ############################################################################ | 100%
+rsa-4.0              | 27 KB     | ############################################################################ | 100%
+idna-2.9             | 52 KB     | ############################################################################ | 100%
+markdown-3.2.1       | 61 KB     | ############################################################################ | 100%
+tensorflow-2.1.0     | 4 KB      | ############################################################################ | 100%
+absl-py-0.9.0        | 162 KB    | ############################################################################ | 100%
+pyasn1-0.4.8         | 53 KB     | ############################################################################ | 100%
+requests-2.23.0      | 47 KB     | ############################################################################ | 100%
+libblas-3.8.0        | 3.5 MB    | ############################################################################ | 100%
+tensorflow-estimator | 251 KB    | ############################################################################ | 100%
+brotlipy-0.7.0       | 367 KB    | ############################################################################ | 100%
+werkzeug-0.16.1      | 255 KB    | ############################################################################ | 100%
+_tflow_select-2.1.0  | 3 KB      | ############################################################################ | 100%
+cudatoolkit-10.1.243 | 300.3 MB  | ############################################################################ | 100%
+pyreadline-2.1       | 141 KB    | ############################################################################ | 100%
+opt_einsum-3.2.1     | 49 KB     | ############################################################################ | 100%
+grpcio-1.27.2        | 1.2 MB    | ############################################################################ | 100%
+numpy-1.18.4         | 4.8 MB    | ############################################################################ | 100%
+intel-openmp-2020.0  | 1.5 MB    | ############################################################################ | 100%
+cudnn-7.6.5          | 179.1 MB  | ############################################################################ | 100%
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+
+(ajaygpu) C:\Users\Ajay>python -m ipykernel install --user --name ajaygpu --display-name "ajaygpu"
+Installed kernelspec ajaygpu in C:\Users\Ajay\AppData\Roaming\jupyter\kernels\ajaygpu
+
+(ajaygpu) C:\Users\Ajay>pip install ipykernel
+Requirement already satisfied: ipykernel in c:\users\ajay\anaconda3\envs\ajaygpu\lib\site-packages (5.2.1)
+Requirement already satisfied: ipython>=5.0.0 in c:\users\ajay\anaconda3\envs\ajaygpu\lib\site-packages (from ipykernel) (7.14.0)
+Requirement already satisfied: tornado>=4.2 in c:\users\ajay\anaconda3\envs\ajaygpu\lib\site-packages (from ipykernel) (6.0.4)
+Requirement already satisfied: jupyter-client in c:\users\ajay\anaconda3\envs\ajaygpu\lib\site-packages (from ipykernel) (6.1.3)
+Requirement already satisfied: traitlets>=4.1.0 in c:\users\ajay\anaconda3\envs\ajaygpu\lib\site-packages (from ipykernel) (4.3.3)
+Requirement already satisfied: pickleshare in c:\users\ajay\anaconda3\envs\ajaygpu\lib\site-packages (from ipython>=5.0.0->ipykernel) (0.7.5)
+Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0 in c:\users\ajay\anaconda3\envs\ajaygpu\lib\site-packages (from ipython>=5.0.0->ipykernel) (3.0.5)
+Requirement already satisfied: pygments in c:\users\ajay\anaconda3\envs\ajaygpu\lib\site-packages (from ipython>=5.0.0->ipykernel) (2.6.1)
+Requirement already satisfied: colorama; sys_platform == "win32" in c:\users\ajay\anaconda3\envs\ajaygpu\lib\site-packages (from ipython>=5.0.0->ipykernel) (0.4.3)
+Requirement already satisfied: decorator in c:\users\ajay\anaconda3\envs\ajaygpu\lib\site-packages (from ipython>=5.0.0->ipykernel) (4.4.2)
+Requirement already satisfied: jedi>=0.10 in c:\users\ajay\anaconda3\envs\ajaygpu\lib\site-packages (from ipython>=5.0.0->ipykernel) (0.17.0)
+Requirement already satisfied: backcall in c:\users\ajay\anaconda3\envs\ajaygpu\lib\site-packages (from ipython>=5.0.0->ipykernel) (0.1.0)
+Requirement already satisfied: setuptools>=18.5 in c:\users\ajay\anaconda3\envs\ajaygpu\lib\site-packages (from ipython>=5.0.0->ipykernel) (46.1.3.post20200330)
+Requirement already satisfied: python-dateutil>=2.1 in c:\users\ajay\anaconda3\envs\ajaygpu\lib\site-packages (from jupyter-client->ipykernel) (2.8.1)
+Requirement already satisfied: pyzmq>=13 in c:\users\ajay\anaconda3\envs\ajaygpu\lib\site-packages (from jupyter-client->ipykernel) (19.0.1)
+Requirement already satisfied: jupyter-core>=4.6.0 in c:\users\ajay\anaconda3\envs\ajaygpu\lib\site-packages (from jupyter-client->ipykernel) (4.6.3)
+Requirement already satisfied: six in c:\users\ajay\anaconda3\envs\ajaygpu\lib\site-packages (from traitlets>=4.1.0->ipykernel) (1.14.0)
+Requirement already satisfied: ipython-genutils in c:\users\ajay\anaconda3\envs\ajaygpu\lib\site-packages (from traitlets>=4.1.0->ipykernel) (0.2.0)
+Requirement already satisfied: wcwidth in c:\users\ajay\anaconda3\envs\ajaygpu\lib\site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0->ipython>=5.0.0->ipykernel) (0.1.9)
+Requirement already satisfied: parso>=0.7.0 in c:\users\ajay\anaconda3\envs\ajaygpu\lib\site-packages (from jedi>=0.10->ipython>=5.0.0->ipykernel) (0.7.0)
+Requirement already satisfied: pywin32>=1.0; sys_platform == "win32" in c:\users\ajay\anaconda3\envs\ajaygpu\lib\site-packages (from jupyter-core>=4.6.0->jupyter-client->ipykernel) (227)
+
+(ajaygpu) C:\Users\Ajay>conda install jupyter
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: C:\Users\Ajay\Anaconda3\envs\ajaygpu
+
+  added / updated specs:
+    - jupyter
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    attrs-19.3.0               |             py_0          40 KB
+    bleach-3.1.4               |             py_0         114 KB
+    colorama-0.4.3             |             py_0          20 KB
+    decorator-4.4.2            |             py_0          14 KB
+    defusedxml-0.6.0           |             py_0          23 KB
+    icu-58.2                   |       ha925a31_3         9.4 MB
+    importlib_metadata-1.5.0   |           py37_0          49 KB
+    ipykernel-5.1.4            |   py37h39e3cac_0         175 KB
+    ipython-7.13.0             |   py37h5ca1d4c_0         996 KB
+    ipywidgets-7.5.1           |             py_0         104 KB
+    jedi-0.17.0                |           py37_0         776 KB
+    jinja2-2.11.2              |             py_0         103 KB
+    jsonschema-3.2.0           |           py37_0         112 KB
+    jupyter_client-6.1.3       |             py_0          82 KB
+    jupyter_console-6.1.0      |             py_0          24 KB
+    jupyter_core-4.6.3         |           py37_0          85 KB
+    nbconvert-5.6.1            |           py37_0         475 KB
+    nbformat-5.0.6             |             py_0          89 KB
+    notebook-6.0.3             |           py37_0         4.3 MB
+    openssl-1.1.1g             |       he774522_0         4.8 MB
+    parso-0.7.0                |             py_0          72 KB
+    prometheus_client-0.7.1    |             py_0          45 KB
+    prompt-toolkit-3.0.4       |             py_0         244 KB
+    prompt_toolkit-3.0.4       |                0          11 KB
+    pygments-2.6.1             |             py_0         654 KB
+    pyrsistent-0.16.0          |   py37he774522_0          95 KB
+    python-dateutil-2.8.1      |             py_0         215 KB
+    pywin32-227                |   py37he774522_1         5.5 MB
+    pywinpty-0.5.7             |           py37_0          50 KB
+    pyzmq-18.1.1               |   py37ha925a31_0         400 KB
+    qtconsole-4.7.3            |             py_0          94 KB
+    qtpy-1.9.0                 |             py_0          38 KB
+    terminado-0.8.3            |           py37_0          26 KB
+    testpath-0.4.4             |             py_0          82 KB
+    tornado-6.0.4              |   py37he774522_1         604 KB
+    traitlets-4.3.3            |           py37_0         140 KB
+    wcwidth-0.1.9              |             py_0          23 KB
+    zipp-3.1.0                 |             py_0          13 KB
+    ------------------------------------------------------------
+                                           Total:        30.0 MB
+
+The following NEW packages will be INSTALLED:
+
+  attrs              pkgs/main/noarch::attrs-19.3.0-py_0
+  backcall           pkgs/main/win-64::backcall-0.1.0-py37_0
+  bleach             pkgs/main/noarch::bleach-3.1.4-py_0
+  colorama           pkgs/main/noarch::colorama-0.4.3-py_0
+  decorator          pkgs/main/noarch::decorator-4.4.2-py_0
+  defusedxml         pkgs/main/noarch::defusedxml-0.6.0-py_0
+  entrypoints        pkgs/main/win-64::entrypoints-0.3-py37_0
+  icu                pkgs/main/win-64::icu-58.2-ha925a31_3
+  importlib_metadata pkgs/main/win-64::importlib_metadata-1.5.0-py37_0
+  ipykernel          pkgs/main/win-64::ipykernel-5.1.4-py37h39e3cac_0
+  ipython            pkgs/main/win-64::ipython-7.13.0-py37h5ca1d4c_0
+  ipython_genutils   pkgs/main/win-64::ipython_genutils-0.2.0-py37_0
+  ipywidgets         pkgs/main/noarch::ipywidgets-7.5.1-py_0
+  jedi               pkgs/main/win-64::jedi-0.17.0-py37_0
+  jinja2             pkgs/main/noarch::jinja2-2.11.2-py_0
+  jpeg               pkgs/main/win-64::jpeg-9b-hb83a4c4_2
+  jsonschema         pkgs/main/win-64::jsonschema-3.2.0-py37_0
+  jupyter            pkgs/main/win-64::jupyter-1.0.0-py37_7
+  jupyter_client     pkgs/main/noarch::jupyter_client-6.1.3-py_0
+  jupyter_console    pkgs/main/noarch::jupyter_console-6.1.0-py_0
+  jupyter_core       pkgs/main/win-64::jupyter_core-4.6.3-py37_0
+  libpng             pkgs/main/win-64::libpng-1.6.37-h2a8f88b_0
+  libsodium          pkgs/main/win-64::libsodium-1.0.16-h9d3ae62_0
+  m2w64-gcc-libgfor~ pkgs/msys2/win-64::m2w64-gcc-libgfortran-5.3.0-6
+  m2w64-gcc-libs     pkgs/msys2/win-64::m2w64-gcc-libs-5.3.0-7
+  m2w64-gcc-libs-co~ pkgs/msys2/win-64::m2w64-gcc-libs-core-5.3.0-7
+  m2w64-gmp          pkgs/msys2/win-64::m2w64-gmp-6.1.0-2
+  m2w64-libwinpthre~ pkgs/msys2/win-64::m2w64-libwinpthread-git-5.0.0.4634.697f757-2
+  markupsafe         pkgs/main/win-64::markupsafe-1.1.1-py37he774522_0
+  mistune            pkgs/main/win-64::mistune-0.8.4-py37he774522_0
+  msys2-conda-epoch  pkgs/msys2/win-64::msys2-conda-epoch-20160418-1
+  nbconvert          pkgs/main/win-64::nbconvert-5.6.1-py37_0
+  nbformat           pkgs/main/noarch::nbformat-5.0.6-py_0
+  notebook           pkgs/main/win-64::notebook-6.0.3-py37_0
+  pandoc             pkgs/main/win-64::pandoc-2.2.3.2-0
+  pandocfilters      pkgs/main/win-64::pandocfilters-1.4.2-py37_1
+  parso              pkgs/main/noarch::parso-0.7.0-py_0
+  pickleshare        pkgs/main/win-64::pickleshare-0.7.5-py37_0
+  prometheus_client  pkgs/main/noarch::prometheus_client-0.7.1-py_0
+  prompt-toolkit     pkgs/main/noarch::prompt-toolkit-3.0.4-py_0
+  prompt_toolkit     pkgs/main/noarch::prompt_toolkit-3.0.4-0
+  pygments           pkgs/main/noarch::pygments-2.6.1-py_0
+  pyqt               pkgs/main/win-64::pyqt-5.9.2-py37h6538335_2
+  pyrsistent         pkgs/main/win-64::pyrsistent-0.16.0-py37he774522_0
+  python-dateutil    pkgs/main/noarch::python-dateutil-2.8.1-py_0
+  pywin32            pkgs/main/win-64::pywin32-227-py37he774522_1
+  pywinpty           pkgs/main/win-64::pywinpty-0.5.7-py37_0
+  pyzmq              pkgs/main/win-64::pyzmq-18.1.1-py37ha925a31_0
+  qt                 pkgs/main/win-64::qt-5.9.7-vc14h73c81de_0
+  qtconsole          pkgs/main/noarch::qtconsole-4.7.3-py_0
+  qtpy               pkgs/main/noarch::qtpy-1.9.0-py_0
+  send2trash         pkgs/main/win-64::send2trash-1.5.0-py37_0
+  sip                pkgs/main/win-64::sip-4.19.8-py37h6538335_0
+  terminado          pkgs/main/win-64::terminado-0.8.3-py37_0
+  testpath           pkgs/main/noarch::testpath-0.4.4-py_0
+  tornado            pkgs/main/win-64::tornado-6.0.4-py37he774522_1
+  traitlets          pkgs/main/win-64::traitlets-4.3.3-py37_0
+  wcwidth            pkgs/main/noarch::wcwidth-0.1.9-py_0
+  webencodings       pkgs/main/win-64::webencodings-0.5.1-py37_1
+  widgetsnbextension pkgs/main/win-64::widgetsnbextension-3.5.1-py37_0
+  winpty             pkgs/main/win-64::winpty-0.4.3-4
+  zeromq             pkgs/main/win-64::zeromq-4.3.1-h33f27b4_3
+  zipp               pkgs/main/noarch::zipp-3.1.0-py_0
+
+The following packages will be SUPERSEDED by a higher-priority channel:
+
+  ca-certificates    conda-forge::ca-certificates-2020.4.5~ --> pkgs/main::ca-certificates-2020.1.1-0
+  certifi            conda-forge::certifi-2020.4.5.1-py37h~ --> pkgs/main::certifi-2020.4.5.1-py37_0
+  openssl                                       conda-forge --> pkgs/main
+
+
+Proceed ([y]/n)?
+
+
+Downloading and Extracting Packages
+pywinpty-0.5.7       | 50 KB     | ############################################################################ | 100%
+qtpy-1.9.0           | 38 KB     | ############################################################################ | 100%
+testpath-0.4.4       | 82 KB     | ############################################################################ | 100%
+jupyter_console-6.1. | 24 KB     | ############################################################################ | 100%
+pywin32-227          | 5.5 MB    | ############################################################################ | 100%
+nbconvert-5.6.1      | 475 KB    | ############################################################################ | 100%
+terminado-0.8.3      | 26 KB     | ############################################################################ | 100%
+icu-58.2             | 9.4 MB    | ############################################################################ | 100%
+pyrsistent-0.16.0    | 95 KB     | ############################################################################ | 100%
+jupyter_core-4.6.3   | 85 KB     | ############################################################################ | 100%
+prompt_toolkit-3.0.4 | 11 KB     | ############################################################################ | 100%
+ipywidgets-7.5.1     | 104 KB    | ############################################################################ | 100%
+nbformat-5.0.6       | 89 KB     | ############################################################################ | 100%
+prompt-toolkit-3.0.4 | 244 KB    | ############################################################################ | 100%
+colorama-0.4.3       | 20 KB     | ############################################################################ | 100%
+jsonschema-3.2.0     | 112 KB    | ############################################################################ | 100%
+ipykernel-5.1.4      | 175 KB    | ############################################################################ | 100%
+openssl-1.1.1g       | 4.8 MB    | ############################################################################ | 100%
+parso-0.7.0          | 72 KB     | ############################################################################ | 100%
+notebook-6.0.3       | 4.3 MB    | ############################################################################ | 100%
+jinja2-2.11.2        | 103 KB    | ############################################################################ | 100%
+traitlets-4.3.3      | 140 KB    | ############################################################################ | 100%
+wcwidth-0.1.9        | 23 KB     | ############################################################################ | 100%
+pyzmq-18.1.1         | 400 KB    | ############################################################################ | 100%
+jedi-0.17.0          | 776 KB    | ############################################################################ | 100%
+decorator-4.4.2      | 14 KB     | ############################################################################ | 100%
+prometheus_client-0. | 45 KB     | ############################################################################ | 100%
+defusedxml-0.6.0     | 23 KB     | ############################################################################ | 100%
+bleach-3.1.4         | 114 KB    | ############################################################################ | 100%
+attrs-19.3.0         | 40 KB     | ############################################################################ | 100%
+python-dateutil-2.8. | 215 KB    | ############################################################################ | 100%
+ipython-7.13.0       | 996 KB    | ############################################################################ | 100%
+qtconsole-4.7.3      | 94 KB     | ############################################################################ | 100%
+importlib_metadata-1 | 49 KB     | ############################################################################ | 100%
+pygments-2.6.1       | 654 KB    | ############################################################################ | 100%
+zipp-3.1.0           | 13 KB     | ############################################################################ | 100%
+tornado-6.0.4        | 604 KB    | ############################################################################ | 100%
+jupyter_client-6.1.3 | 82 KB     | ############################################################################ | 100%
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: / DEBUG menuinst_win32:__init__(199): Menu: name: 'Anaconda${PY_VER} ${PLATFORM}', prefix: 'C:\Users\Ajay\Anaconda3\envs\ajaygpu', env_name: 'ajaygpu', mode: 'user', used_mode: 'user'
+DEBUG menuinst_win32:create(323): Shortcut cmd is C:\Users\Ajay\Anaconda3\python.exe, args are ['C:\\Users\\Ajay\\Anaconda3\\cwp.py', 'C:\\Users\\Ajay\\Anaconda3\\envs\\ajaygpu', 'C:\\Users\\Ajay\\Anaconda3\\envs\\ajaygpu\\python.exe', 'C:\\Users\\Ajay\\Anaconda3\\envs\\ajaygpu\\Scripts\\jupyter-notebook-script.py', '"%USERPROFILE%/"']
+done
+
+(ajaygpu) C:\Users\Ajay>pip install keras
+Collecting keras
+  Using cached Keras-2.3.1-py2.py3-none-any.whl (377 kB)
+Requirement already satisfied: keras-preprocessing>=1.0.5 in c:\users\ajay\anaconda3\envs\ajaygpu\lib\site-packages (from keras) (1.1.0)
+Requirement already satisfied: keras-applications>=1.0.6 in c:\users\ajay\anaconda3\envs\ajaygpu\lib\site-packages (from keras) (1.0.8)
+Requirement already satisfied: h5py in c:\users\ajay\appdata\roaming\python\python37\site-packages (from keras) (2.10.0)
+Requirement already satisfied: six>=1.9.0 in c:\users\ajay\anaconda3\envs\ajaygpu\lib\site-packages (from keras) (1.14.0)
+Collecting pyyaml
+  Downloading PyYAML-5.3.1-cp37-cp37m-win_amd64.whl (216 kB)
+     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 216 kB 386 kB/s
+Requirement already satisfied: scipy>=0.14 in c:\users\ajay\appdata\roaming\python\python37\site-packages (from keras) (1.4.1)
+Requirement already satisfied: numpy>=1.9.1 in c:\users\ajay\anaconda3\envs\ajaygpu\lib\site-packages (from keras) (1.18.4)
+Installing collected packages: pyyaml, keras
+Successfully installed keras-2.3.1 pyyaml-5.3.1
+
+(ajaygpu) C:\Users\Ajay>
+
